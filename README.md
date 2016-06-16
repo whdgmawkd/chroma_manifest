@@ -3,7 +3,7 @@ Chroma Manifest
 
 To initialize your local repository use
 
-    repo init -u https://github.com/zephik/chroma_manifest.git -b mm6.0
+    repo init -u https://github.com/whdgmawkd/chroma_manifest.git -b mm6.0
     
 
 Then to sync up:
