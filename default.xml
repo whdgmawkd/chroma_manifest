@@ -6,13 +6,15 @@
            review="android-review.googlesource.com" />
   <remote name="chroma"
            fetch="https://github.com/zephik/" /> 
+  <remote name="nindi"
+           fetch="https://github.com/whdgmawkd/" />
   <remote name="cm"
            fetch="https://github.com/cyanogenmod/" /> 
   <default revision="refs/tags/android-6.0.1_r45"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="android_build" groups="pdk" remote="chroma" revision="mm6.0" >
+  <project path="build" name="android_build" groups="pdk" remote="nindi" revision="mm6.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -42,8 +44,9 @@
   <project path="device/generic/qemu" name="device/generic/qemu" />
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
-  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="chroma" revision="mm6.0" />
+  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="nindi" revision="mm6.0" />
   <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
+  <project path="kernel/huawei/angler" name="android_kernel_huawei_angler" groups="kernel,angler,boradcom_pdk" remote="nindi" revision="mm6.0" />
   <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="chroma" revision="mm6.0" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
